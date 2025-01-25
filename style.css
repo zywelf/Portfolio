@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato';
+    text-decoration: none;
+    scroll-behavior: smooth;
+    list-style: none;
+    background-color: black;
+}
+/*                                      Formattazione della barra principale del Portfolio                                      */
+header{
+    position: fixed;
+    top: 1rem;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+    background-color: ivory;
+    backdrop-filter: blur(8px);
+    /*color: red;*/
+    padding: 0.5rem 1.5rem;
+    border-radius: 3rem;
+    z-index: 1000;
+}
+/*Formattazione per rendere lo sfondo dei testi trasparenti*/
+header *{
+    background-color: transparent;
+}
+/*Formattazione nome nella barra navigazione*/
+.logo{
+    color: black;
+    font-size: 1.3rem;
+    font-weight: 600;
+    text-wrap: nowrap;
+    transition: 0.3s ease-in-out;
+}
+/*Formattazione effetto del logo menu*/
+.logo:hover{
+    transform: scale(1.1);
+}
+/*Formattazione testi link della barra navigazione*/
+.nav-links{
+    display: flex;
+    gap: 2rem;
+}
+li a{
+    position: relative;
+    color: black;
+    font-weight: 400;
+}
+/*Formattazione Effetto sotto i link nella barra navigazione*/
+li a::before{
+    position: absolute;
+    content: "";
+    width: 0;
+    left: 0;
+    height: 5px;
+    top: 25px;
+    border-radius: 1rem;
+    transition: 0.3s ease-in-out;
+    background: linear-gradient(to left, #1d4350, #a43931);
+}
+li a:hover::before{
+    width: 100%;
+}
+/*Formattazione bottone GitHub*/
+.button-github{
+    padding: 0.8rem 1.5rem;
+    border-radius: 3rem;
+    border: none;
+    font-weight: 500;
+    font-size: 1rem;
+    color: white;
+    cursor: pointer;
+    text-wrap: nowrap;
+    transition: 0.3s ease-in-out;
+    background: linear-gradient(to left, #1d4350, #a43931);
+}
+.button-github:hover{
+    background: linear-gradient(to right, #1d4350, #a43931);
+    transform: scale(1.03);
+}
+
+#menu-icon{
+    font-size: 2rem;
+    display: none;
+}
+
+/*                                      Formattazione sezione informazioni principali                                       */
+section{
+    min-height: 100vh;
+    padding: 8rem 12%;
+    width: 100%;
+    position: relative;
+    color: white;
+}
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.about .about-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10rem;
+}
+/*Formattazione immagine personale*/
+.about img{
+    width: 30vw;
+    border-radius: 50%;
+}
+/*Formattazione sezione principale*/
+.info-about{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+}
+.info-about h3{
+    font-size: 1.8rem;
+    font-weight: 500;
+    opacity: 0.8;
+}
+.info-about h1{
+    font-size: 4rem;
+    font-weight: 600;
+}
+/*Formattazione testo professione con i colori gradienti*/
+.info-about span{
+    background: linear-gradient(to left, #1d4350, #a43931);
+    background-clip: text;
+    color: transparent;
+    font-size: 2rem;
+}
+/*Formattazione bottoni CV e Contatti*/
+.button-group{
+    display: flex;
+    gap: 1rem;
+}
+.button{
+    border-radius: 3rem;
+    padding: 0.5rem 1.5rem;
+    border: 2px solid white;
+    cursor: pointer;
+    font-weight: 500;
+    text-wrap: nowrap;
+    transition: 0.3s ease-in-out;
+}
+.button:hover{
+    background-color: darkgreen;
+    color: white;
+}
+/*Formattazione loghi social*/
+.social-links{
+    display: flex;
+    gap: 1rem;
+}
+.social-links i{
+    font-size: 2.5rem;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.social-links i:hover{
+    transform: scale(1.1);
+}
+
+/*                                      Formattazione sezione esperienza lavoro                                     */
+.second-title{
+    text-align: center;
+    font-size: 4rem;
+    font-weight: 600;
+    margin-bottom: 3rem;
+    gap: 3rem;
+}
+.experience-info{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+}
+/*Formattazione immagine esperienza*/
+.experience img{
+    width: 24vw;
+    border-radius: 3rem;
+}
+.grid{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+}
+.grid-card{
+    border: white;
+    border-radius: 3rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    justify-content: left;
+    cursor: pointer;
+    transition: 0.2s ease-in-out;
+}
+.grid-card:hover{
+    transform: scale(1.02);
+    background: white;
+    color: white;
+}
+/*Stile per rendere il background del testo trasparente*/
+.grid-card:hover p,
+.grid-card:hover h3{
+    background-color: transparent;
+    color: black;
+}
+.grid-card span{
+    font-size: 1.5rem;
+    font-weight: 500;
+    background: linear-gradient(to left, #1d4350, #a43931);
+    background-clip: text;
+    color: transparent;
+}
+
+

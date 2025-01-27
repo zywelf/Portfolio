@@ -4,7 +4,7 @@
     /* Colori principali */
     --color-white: #ffffff;
     --color-black: #000000;
-    transition: all 0.2s ease-in-out;
+    transition: all 0.3s ease-in-out;
 }
 /*Versione chiara del sito con i colori invertiti*/
 .light-mode{
@@ -435,7 +435,7 @@ footer ul li a{
     }
     .about-container{
         flex-direction: column;
-        
+
     }
     .input-box input{
         padding: 1rem 2rem;

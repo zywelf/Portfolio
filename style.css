@@ -435,6 +435,7 @@ footer ul li a{
     }
     .about-container{
         flex-direction: column;
+        
     }
     .input-box input{
         padding: 1rem 2rem;

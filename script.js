@@ -25,3 +25,12 @@ themeSwitch.addEventListener('click', () => {
     //     themeIcon.classList.add('fa-lightbulb'); // Icona spenta
     // }
 });
+
+// Comando per apparizione popup
+function showPopup() {
+    document.getElementById("popup").classList.remove("hidden");
+}
+
+function closePopup() {
+    document.getElementById("popup").classList.add("hidden");
+}

@@ -15,7 +15,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Lato';
+    font-family: 'Lato', serif;
     text-decoration: none;
     scroll-behavior: smooth;
     list-style: none;
@@ -74,10 +74,11 @@ li a::before{
     top: 25px;
     border-radius: 1rem;
     transition: 0.3s ease-in-out;
-    background: var(--color-black);
+    background: white;
 }
 li a:hover::before{
     width: 100%;
+    background: linear-gradient(to left, #1d4350, #a43931);
 }
 /*Formattazione bottone GitHub*/
 .button-github{
@@ -201,15 +202,9 @@ section{
     transform: scale(1.1);
 }
 /*Colorazione dei loghi intatta una volta cliccato i tasti*/
-/*.social-links i:active{*/
-/*    background-color: transparent;*/
-/*    color: white;*/
-/*}*/
-/*.social-links i:focus{*/
-/*    background-color: transparent;*/
-/*    color: white;*/
-/*    outline: none;*/
-/*}*/
+.social-links a:visited{
+    color: inherit;
+}
 
 /*                                      Formattazione sezione esperienza lavoro                                     */
 .section-title{
@@ -281,6 +276,7 @@ section{
 }
 ::-webkit-scrollbar-thumb{
     background: linear-gradient(to bottom, #1d4350, #a43931);
+    border-radius: 10px;
 }
 /*                                      Formattazione sezione progetti                                     */
 .projects-grid{
@@ -334,6 +330,34 @@ section{
     font-size: 2rem;
     font-weight: 500;
 }
+
+.popup{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+.popup.hidden{
+    display: none;
+}
+.popup-content{
+    background: white;
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.popup-content .close-button,
+.popup-content p{
+    color: black;
+    background: transparent;
+}
 /*                                      Formattazione sezione contatti                                     */
 .input-box{
     display: flex;
@@ -365,6 +389,37 @@ section{
     left: 10px;
     transform: translate(50%,-50%);
 }
+.input-box textarea{
+    position: relative;
+    border-radius: 3rem;
+    border: 2px solid var(--color-white);
+    padding: 2rem 2rem;
+    font-size: 3rem;
+    color: var(--color-white);
+    resize: none;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+}
+.textarea-box textarea::-webkit-scrollbar {
+    width: 8px; /* Larghezza dello slider verticale */
+    height: 3px; /* Altezza dello slider orizzontale */
+}
+/*Formattazione della distanza della barra di scorrimento*/
+.textarea-box textarea::-webkit-scrollbar-track {
+    margin: 60px 60px; /* Margine sopra e sotto per accorciare il percorso */
+}
+/*Formattazione in corso del messaggio di errore di mancato inserimento dati*/
+.input-box .error-text {
+    color: red;
+    text-align: left;
+    margin: 0;
+    padding-left: 7rem;
+    font-size: 1.2rem;
+    width: 100%;
+    display: none;
+}
+
 /*                                      Formattazione footer                                    */
 footer{
     bottom: 0;
@@ -387,7 +442,7 @@ footer ul li a{
     font-weight: 600;
 }
 .copyright{
-    font-size: 300;
+    font-size: 15px;
     margin-top: 2rem;
     color: var(--color-white);
 }
@@ -431,27 +486,33 @@ footer ul li a{
     /*}*/
 
     #theme-switch i {
-        font-size: 1.4rem; /* Ancora più piccola per tablet */
+        font-size: 1.4rem;
     }
     .about-container{
         flex-direction: column;
 
     }
     .input-box input{
-        padding: 1rem 2rem;
+        padding: 1rem 3rem;
         font-size: 1.8rem;
     }
     .input-box input::placeholder{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
     }
     .input-box i{
-        display: none;
+        /*display: none;*/
+        position: absolute;
+        left: 1rem;
+        font-size: 1.3rem;
     }
     .grid{
         grid-template-columns: repeat(1,1fr);
     }
     .experience-info img{
         width: 70vw;
+    }
+    .textarea-box textarea{
+        font-size: 1.4rem;
     }
 }
 
@@ -464,7 +525,7 @@ footer ul li a{
     #theme-switch {
         position: absolute;
         top: 1.1rem;
-        right: 2rem; /* Posiziona l'icona in alto a destra */
+        right: 2rem;
     }
     /*#theme-switch i {*/
     /*    font-size: 1.8rem; !* Icona più piccola per smartphone *!*/
@@ -486,7 +547,7 @@ footer ul li a{
         display: none;
     }
     .nav-links a{
-        color: var(--color-white);
+        color: white;
     }
     .nav-links li{
         margin-top: 1.5rem;
@@ -507,14 +568,22 @@ footer ul li a{
         width: 80vw;
     }
     .input-box input{
-        padding: 0.5rem 3rem;
-        width: 80%;
+        padding: 1rem 3rem;
+        /*width: 80%;*/
         font-size: 1.5rem;
     }
     .input-box input::placeholder{
-        font-size: 1.5rem;
+        font-size: 1.3rem;
+    }
+    .input-box i{
+        position: absolute;
+        left: 1rem;
+        font-size: 1rem;
     }
     footer ul{
         gap: 1rem;
+    }
+    .textarea-box textarea{
+        font-size: 1.1rem;
     }
 }

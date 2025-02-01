@@ -480,6 +480,13 @@ footer ul li a{
         padding: 1rem 2rem;
         gap: 2rem;
     }
+    .social-links i:hover{
+        transform: scale(1.1);
+    }
+    /*Colorazione dei loghi intatta una volta cliccato i tasti*/
+    .social-links a:visited{
+        color: inherit;
+    }
     .switch-container{
         display: flex;
         align-items: center;
@@ -518,6 +525,13 @@ footer ul li a{
         display: flex;
         align-items: center;
         gap: 1rem;
+    }
+    .social-links i:hover{
+        transform: scale(1.1);
+    }
+    /*Colorazione dei loghi intatta una volta cliccato i tasti*/
+    .social-links a:visited{
+        color: inherit;
     }
     #theme-switch i {
         font-size: 1.4rem;
@@ -569,7 +583,13 @@ footer ul li a{
         display: flex;
         flex-direction: column;
     }
-
+    .social-links i:hover{
+        transform: scale(1.1);
+    }
+    /*Colorazione dei loghi intatta una volta cliccato i tasti*/
+    .social-links a:visited{
+        color: inherit;
+    }
     #theme-switch,
     #lang-switch,
     #menu-icon{

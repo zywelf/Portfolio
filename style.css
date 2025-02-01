@@ -102,15 +102,22 @@ li a:hover::before{
     display: none;
     color: var(--color-black);
 }
-/*Formattazione cambio tema portfolio*/
-#theme-switch{
+/*Formattazione cambio tema e lingua del portfolio*/
+.switch-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+#theme-switch,
+#lang-switch {
     font-size: 1.8rem;
     color: var(--color-black);
     cursor: pointer;
     transition: 0.3s ease-in-out;
     display: flex;
 }
-#theme-switch:hover{
+#theme-switch:hover,
+#lang-switch:hover{
     transform: scale(1.1);
 }
 
@@ -130,9 +137,17 @@ section{
 }
 .about .about-container{
     display: flex;
+    flex-direction: row;
     align-items: center;
-    justify-content: center;
-    gap: 10rem;
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+.info-about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
 }
 /*Formattazione immagine personale*/
 .about img{
@@ -415,8 +430,8 @@ section{
     overflow: auto;
 }
 .textarea-box textarea::-webkit-scrollbar {
-    width: 8px; /* Larghezza dello slider verticale */
-    height: 3px; /* Altezza dello slider orizzontale */
+    width: 8px;
+    height: 3px;
 }
 /*Formattazione della distanza della barra di scorrimento*/
 .textarea-box textarea::-webkit-scrollbar-track {
@@ -465,6 +480,11 @@ footer ul li a{
         padding: 1rem 2rem;
         gap: 2rem;
     }
+    .switch-container{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
     .about .about-container{
         gap: 3rem;
     }
@@ -494,11 +514,15 @@ footer ul li a{
     header .button-github{
         display: none;
     }
-    /*#theme-switch {*/
-    /*    margin-left: auto; !* Sposta l'icona verso il lato destro *!*/
-    /*}*/
-
+    .switch-container{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
     #theme-switch i {
+        font-size: 1.4rem;
+    }
+    #lang-switch i{
         font-size: 1.4rem;
     }
     .about-container{
@@ -531,26 +555,34 @@ footer ul li a{
 
 @media (max-width: 600px){
     header {
+        display: flex;
+        align-items: center;
         padding: 1rem 2rem;
         gap: 1rem;
     }
-
-    #theme-switch {
-        position: absolute;
-        top: 18px;
-        right: 2rem;
+    .switch-container{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
     }
-    #theme-switch i{
+    .about .about-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    #theme-switch,
+    #lang-switch,
+    #menu-icon{
+        position: relative;
+    }
+    #theme-switch i,
+    #lang-switch i,
+    #menu-icon i{
         font-size: 1.8rem;
     }
-    /*#theme-switch i {*/
-    /*    font-size: 1.8rem; !* Icona più piccola per smartphone *!*/
-    /*}*/
-
     header #menu-icon{
         display: block;
     }
-
     .nav-links{
         position: absolute;
         top: 100%;
@@ -573,14 +605,9 @@ footer ul li a{
     .nav-links.active{
         display: flex;
     }
-    header{
-        padding: 1rem 5rem;
-        gap: 2rem;
-    }
     header .logo{
         font-size: 1.5rem;
     }
-
     .about-container img{
         width: 80vw;
     }

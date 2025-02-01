@@ -16,57 +16,67 @@
 
         <ul class="nav-links">
             <li>
-                <a href="#about">Informazioni</a>
+                <a href="#about" class="nav-item" data-it="Informazioni" data-en="About">Informazioni</a>
             </li>
             <li>
-                <a href="#experience">Esperienza</a>
+                <a href="#experience" class="nav-item" data-it="Esperienza" data-en="Experience">Esperienza</a>
             </li>
             <li>
-                <a href="#projects">Progetti</a>
+                <a href="#projects" class="nav-item" data-it="Progetti" data-en="Projects">Progetti</a>
             </li>
             <li>
-                <a href="#contact">Contatti</a>
+                <a href="#contact" class="nav-item" data-it="Contatta" data-en="Contact">Contatta</a>
             </li>
         </ul>
 
-        <i class="fa-solid fa-bars" id="menu-icon"></i>
-        <button class="button-github" onclick="window.open('https://github.com/zywelf', '_blank')">Visita GitHub</button>
+        <button class="button-github" onclick="window.open('https://github.com/zywelf', '_blank')" data-it="Visita GitHub" data-en="Visit GitHub">Visita GitHub</button>
 
-        <div id="theme-switch">
-            <i class="fa-regular fa-lightbulb"></i>
+        <div class="switch-container">
+            <div id="menu-icon">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div id="theme-switch">
+                <i class="fa-regular fa-lightbulb"></i>
+            </div>
+            <div id="lang-switch">
+                <i class="fa-solid fa-language"></i>
+            </div>
         </div>
+
     </header>
     <!--Creazione sezione per informazioni principali -->
     <section id="about" class="about">
-        <div class="about-container"></div>
-        <img src="assets/images/PicCV.jpg" alt="">
+        <div class="about-container">
+            <img src="assets/images/PicCV.jpg" alt="">
 
-        <div class="info-about">
+            <div class="info-about">
 
-            <div class="text">
-                <h3>Ciao, sono</h3>
-                <h1>Zywel Fankam</h1>
-                <span>Frontend Developer</span>
-            </div>
+                <div class="text">
+                    <h3 class="text-h3" data-it="Ciao, sono" data-en="Hi, I'm">Ciao, sono</h3>
+                    <h1>Zywel Fankam</h1>
+                    <span>Frontend Developer</span>
+                </div>
 
-            <div class="button-group">
-                <a href="assets/cv/CV%20Zywel%20Fankam%20(IT).pdf" download="Zywel_Fankam_CV.pdf" class="button">Scarica CV</a>
-                <a href="#contact" class="button">Contattami</a>
-            </div>
+                <div class="button-group">
+                    <a href="assets/cv/CV%20Zywel%20Fankam%20(IT).pdf" download="Zywel_Fankam_CV.pdf" class="button" data-it="Scarica CV" data-en="Download CV">Scarica CV</a>
+                    <a href="#contact" class="button" data-it="Contattami" data-en="Contact me">Contattami</a>
+                </div>
 
-            <div class="social-links">
-                <a href="https://github.com/zywelf" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-github"></i>
-                </a>
-                <a href="https://www.linkedin.com/in/zywel-fankam/" target="_blank" rel="noopener noreferrer">
-                <i class="fa-brands fa-linkedin"></i>
-                </a>
-            </div>
+                <div class="social-links">
+                    <a href="https://github.com/zywelf" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/zywel-fankam/" target="_blank" rel="noopener noreferrer">
+                        <i class="fa-brands fa-linkedin"></i>
+                    </a>
+                </div>
+        </div>
+
         </div>
     </section>
     <!--Creazione sezione con esperienza-->
     <section id="experience" class="experience">
-        <h2 class="section-title">Esperienza</h2>
+        <h2 class="section-title" data-it="Esperienza" data-en="Experience">Esperienza</h2>
 
         <div class="experience-info">
 
@@ -74,9 +84,15 @@
                 <div class="grid-card">
                     <i class="fa-solid fa-code"></i>
                     <span>Frontend Developer</span>
-                    <h3>5 Mesi</h3>
-                    <p> Ristrutturazione, ottimizzazione e miglioramento di un sito web e l’app di una catena di ristoranti asiatici,
-                        implementando nuove funzionalità, migliorando la UX/UI e lavorando anche in backend per alcune revisioni e ottimizzazioni. </p>
+                    <h3 class="monthExp" data-it="5 Mesi" data-en="5 Months">5 Mesi</h3>
+                    <p class="parExp"
+                       data-it="Ristrutturazione, ottimizzazione e miglioramento di un sito web e l’app di una catena di ristoranti asiatici,
+                        implementando nuove funzionalità, migliorando la UX/UI e lavorando anche in backend per alcune revisioni e ottimizzazioni."
+                       data-en="Restructuring, optimization, and enhancement of a website and app for an Asian restaurant chain, implementing new features,
+                        improving UX/UI, and also working on the backend for some revisions and optimizations.">
+                        Ristrutturazione, ottimizzazione e miglioramento di un sito web e l’app di una catena di ristoranti asiatici,
+                        implementando nuove funzionalità, migliorando la UX/UI e lavorando anche in backend per alcune revisioni e ottimizzazioni.
+                    </p>
                     <div class="icon-container">
                         <i class="fa-brands fa-vuejs"></i>
                         <i class="fa-brands fa-js"></i>
@@ -103,41 +119,55 @@
     <!--Creazione sezione progetti-->
     <section id="projects" class="projects">
 
-        <h2 class="section-title">Progetti</h2>
+        <h2 class="section-title" data-it="Progetti" data-en="Projects">Progetti</h2>
 
         <div class="projects-grid">
 
             <div class="project-card">
                 <img src="assets/images/Oblivion.jpg" alt="">
-                <h3>Progetto: Oblivion</h3>
-                <p>App che aiuta a ridurre le distrazioni digitali, permettendo agli utenti di concentrarsi su attività all'aperto, faccende domestiche e studio/lavoro.
-                    <br>L'app filtra le notifiche, mantenendo l'accesso a chiamate e musica, per un equilibrio ottimale tra produttività e intrattenimento.</p>
+                <h3 class="projectName" data-it="Progetto: Oblivion" data-en="Project: Oblivion">Progetto: Oblivion</h3>
+                <p class="proDesc"
+                   data-it="App che aiuta a ridurre le distrazioni digitali, permettendo agli utenti di concentrarsi su attività all'aperto, faccende domestiche e studio/lavoro.
+                    L'app filtra le notifiche, mantenendo l'accesso a chiamate e musica, per un equilibrio ottimale tra produttività e intrattenimento."
+                   data-en="App that helps reduce digital distractions, allowing users to focus on outdoor activities, household chores, and study/work.
+                    The app filters notifications while still providing access to calls and music, ensuring an optimal balance between productivity and entertainment.">
+                    App che aiuta a ridurre le distrazioni digitali, permettendo agli utenti di concentrarsi su attività all'aperto, faccende domestiche e studio/lavoro.
+                    <br>L'app filtra le notifiche, mantenendo l'accesso a chiamate e musica, per un equilibrio ottimale tra produttività e intrattenimento.
+                </p>
                 <div class="button-group">
-                    <div class="button" onclick="showPopup()">Live Demo</div>
-                    <a href="https://github.com/zywelf/myblivion_application" target="_blank" class="button">GitHub Repo</a>
+                    <div class="button" onclick="showPopup()" data-it="Live Demo" data-en="Live Demo">Live Demo</div>
+                    <a href="https://github.com/zywelf/myblivion_application" target="_blank" class="button" data-it="GitHub Repo" data-en="GitHub Repo">GitHub Repo</a>
                 </div>
             </div>
 
             <div class="project-card">
                 <img src="assets/images/undraw_logistics_xpdj.png" alt="">
-                <h3>Progetto Y</h3>
-                <p>Lorem ipsum dolor sit amet. Eum quis necessitatibus 33 velit labore At incidunt debitis. Et dignissimos expedita aut culpa dolor rem fuga sunt!</p>
+                <h3 class="projectName" data-it="Progetto Y" data-en="Project Y">Progetto Y</h3>
+                <p class="proDesc"
+                    data-it="Lorem ipsum dolor sit amet. Eum quis necessitatibus 33 velit labore At incidunt debitis. Et dignissimos expedita aut culpa dolor rem fuga sunt!"
+                    data-en="Lorem ipsum dolor sit amet. Eum quis necessitatibus 33 velit labore At incidunt debitis. Et dignissimos expedita aut culpa dolor rem fuga sunt!">
+                    Lorem ipsum dolor sit amet. Eum quis necessitatibus 33 velit labore At incidunt debitis. Et dignissimos expedita aut culpa dolor rem fuga sunt!
+                </p>
                 <div class="button-group">
-                    <div class="button">Live Demo</div>
-                    <div class="button">GitHub Repo</div>
+                    <div class="button" data-it="Live Demo" data-en="Live Demo">Live Demo</div>
+                    <div class="button" data-it="GitHub Repo" data-en="GitHub Repo">GitHub Repo</div>
                 </div>
             </div>
 
             <div class="project-card">
                 <img src="assets/images/undraw_logistics_xpdj.png" alt="">
-                <h3>Progetto Z</h3>
-                <p>Lorem ipsum dolor sit amet. Eum quis necessitatibus 33 velit labore At incidunt debitis. Et dignissimos expedita aut culpa dolor rem fuga sunt!</p>
+                <h3 class="projectName" data-it="Progetto Z" data-en="Project Z">Progetto Z</h3>
+                <p class="proDesc"
+                   data-it="Lorem ipsum dolor sit amet. Eum quis necessitatibus 33 velit labore At incidunt debitis. Et dignissimos expedita aut culpa dolor rem fuga sunt!"
+                   data-en="Lorem ipsum dolor sit amet. Eum quis necessitatibus 33 velit labore At incidunt debitis. Et dignissimos expedita aut culpa dolor rem fuga sunt!">
+                    Lorem ipsum dolor sit amet. Eum quis necessitatibus 33 velit labore At incidunt debitis. Et dignissimos expedita aut culpa dolor rem fuga sunt!
+                </p>
                 <div class="button-group">
-                    <div class="button">Live Demo</div>
-                    <div class="button">GitHub Repo</div>
+                    <div class="button" data-it="Live Demo" data-en="Live Demo">Live Demo</div>
+                    <div class="button" data-it="GitHub Repo" data-en="GitHub Repo">GitHub Repo</div>
                 </div>
             </div>
-
+            <!--Da rifare generico-->
             <div id="popup" class="popup hidden">
                 <div class="popup-content">
                     <p>La live demo non è disponibile al momento.</p>
@@ -150,51 +180,51 @@
     <section id="contact" class="contact">
 
         <div class="input-box">
-            <h2 class="section-title">Contattami</h2>
+            <h2 class="section-title" data-it="Contattami" data-en="Contact me">Contattami</h2>
 
             <div class="input">
                 <input type="text" placeholder="Nome completo" autocomplete="off" id="name">
                 <i class="fa-solid fa-user"></i>
             </div>
-            <div class="error-text">Riempire la casella del nome</div>
+<!--            <div class="error-text">Riempire la casella del nome</div>-->
 
             <div class="input">
                 <input type="text" placeholder="Oggetto email" autocomplete="off" id="content">
                 <i class="fa-regular fa-message"></i>
             </div>
-            <div class="error-text">Riempire la casella dell'oggetto email</div>
+<!--            <div class="error-text">Riempire la casella dell'oggetto email</div>-->
 
             <div class="input">
                 <input type="text" placeholder="example@email.com" autocomplete="off" id="email">
                 <i class="fa-solid fa-at"></i>
             </div>
-            <div class="error-text">Riempire la casella email</div>
+<!--            <div class="error-text">Riempire la casella email</div>-->
 
             <div class="textarea-box">
                 <textarea placeholder="Il tuo messaggio" autocomplete="off" cols="35" rows="10" id="description"></textarea>
             </div>
-            <div class="error-text">Riempire la casella testo</div>
+<!--            <div class="error-text">Riempire la casella testo</div>-->
 
-            <div class="button">Invia</div>
+            <div class="button" data-it="Invia" data-en="Send">Invia</div>
         </div>
     </section>
     <!--Creazione footer-->
     <footer>
         <ul>
             <li>
-                <a href="#about">Informazioni</a>
+                <a href="#about" class="footerTxt" data-it="Informazioni" data-en="Information">Informazioni</a>
             </li>
 
             <li>
-                <a href="#experience">Esperienza</a>
+                <a href="#experience" class="footerTxt" data-it="Esperienza" data-en="Experience">Esperienza</a>
             </li>
 
             <li>
-                <a href="#projects">Progetti</a>
+                <a href="#projects" class="footerTxt" data-it="Progetti" data-en="Projects">Progetti</a>
             </li>
 
             <li>
-                <a href="#contact">Contatti</a>
+                <a href="#contact" class="footerTxt" data-it="Contatta" data-en="Contact">Contatta</a>
             </li>
         </ul>
 

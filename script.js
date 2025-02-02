@@ -6,37 +6,87 @@ menuIcon.onclick = () => {
     navLinks.classList.toggle('active');
 }
 
-//Script per cambiare il tema del portfolio
-const themeSwitch = document.getElementById('theme-switch');
-const themeIcon = document.getElementById('theme-icon');
-const root = document.documentElement; // Selettore root per gestire le variabili CSS
+let currentLanguage = "it"; // Variabile globale per la lingua
 
-// Funzione per alternare il tema chiaro e scuro del portfolio
-themeSwitch.addEventListener('click', () => {
-    root.classList.toggle('light-mode');
+//Funzione globale per popup
+function showPopup(message, type = "") {
+    const popup = document.getElementById("custom-popup");
+    const popupText = document.getElementById("popup-text");
+
+    popupText.textContent = message;
+    popup.className = `popup ${type}`; // Aggiunge una classe personalizzata
+    popup.style.display = "block";
+
+    setTimeout(() => {
+        popup.style.animation = "fadeOut 0.5s ease-in-out";
+        setTimeout(() => {
+            popup.style.display = "none";
+            popup.style.animation = "fadeIn 0.5s ease-in-out";
+            popup.className = "popup"; // Rimuove le classi extra dopo la chiusura
+        }, 500);
+    }, 2000);
+}
+//Funzione popup per i progetti non disponibili
+function showPopupUnavailable(type = "unavailable") {
+    const messages = {
+        it: {
+            demo: "❌ La demo non è disponibile al momento.",
+            repo: "❌ Il repository GitHub non è disponibile.",
+            send: "⚠️ Il servizio di invio messaggi non è disponibile al momento."
+        },
+        en: {
+            demo: "❌ The demo is currently unavailable.",
+            repo: "❌ The GitHub repository is unavailable.",
+            send: "⚠️ The message sending service is currently unavailable."
+        }
+    };
+    // Usa sempre la stessa classe CSS per il popup
+    showPopup(messages[currentLanguage][type], "unavailable");
+}
+
+//Funzione per cambiare il tema del portfolio
+document.addEventListener("DOMContentLoaded", function () {
+    const themeSwitch = document.getElementById('theme-switch');
+    const root = document.documentElement; // Selettore root per gestire le variabili CSS
+
+    themeSwitch.addEventListener('click', () => {
+        root.classList.toggle('light-mode');
+
+        // Determina quale tema è attivo
+        const isLightMode = root.classList.contains('light-mode');
+        const themeMessages = {
+            it: {
+                light: "🌞 Tema chiaro attivato!",
+                dark: "🌙 Tema scuro attivato!"
+            },
+            en: {
+                light: "🌞 Light mode activated!",
+                dark: "🌙 Dark mode activated!"
+            }
+        }
+
+        const message = isLightMode ? themeMessages[currentLanguage].light : themeMessages[currentLanguage].dark;
+
+        showPopup(message,"theme"); // Mostra il popup
+    });
 });
 
-// Funzione per apertura e chiusura popup
-function showPopup() {
-    document.getElementById("popup").classList.remove("hidden");
-}
 
-function closePopup() {
-    document.getElementById("popup").classList.add("hidden");
-}
 
-//Script per cambiare lingua nel portfolio
+//Funzione per cambiare la lingua del portfolio
 document.addEventListener("DOMContentLoaded", function () {
     const langSwitch = document.getElementById("lang-switch");
-
-    let currentLanguage = "it"; // Lingua iniziale
 
     langSwitch.addEventListener("click", function () {
         // Calcola la nuova lingua senza modificarla subito
         const newLanguage = currentLanguage === "it" ? "en" : "it";
 
         // Mostra il pop-up che notifica il cambio lingua
-        alert(`Cambio lingua: ${currentLanguage} → ${newLanguage}`);
+        const message = {
+            it: "Lingua cambiata in Italiano!",
+            en: "Language switched to English!"
+        };
+        showPopup(message[newLanguage], "language");
 
         // Aggiorna la lingua corrente
         currentLanguage = newLanguage;     // Cambia lingua tra it e en
@@ -100,6 +150,17 @@ document.addEventListener("DOMContentLoaded", function () {
         if (buttonSend) {
             buttonSend.textContent = buttonSend.getAttribute(`data-${currentLanguage}`);
         }
+        // Traduzione sezione contatti
+        const translatableElements = document.querySelectorAll(".contact [data-it]");
+        translatableElements.forEach(item => {
+            if (item.tagName === "INPUT" || item.tagName === "TEXTAREA") {
+                // Cambia il placeholder per input e textarea
+                item.placeholder = item.getAttribute(`data-${currentLanguage}`);
+            } else {
+                // Cambia il testo per titoli, bottoni e altri elementi
+                item.textContent = item.getAttribute(`data-${currentLanguage}`);
+            }
+        });
         //Traduzione sezione footer
         const footerText = document.querySelectorAll(".footerTxt");
         footerText.forEach(item => {
@@ -107,3 +168,4 @@ document.addEventListener("DOMContentLoaded", function () {
         })
     });
 });
+

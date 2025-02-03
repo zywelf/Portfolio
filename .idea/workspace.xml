@@ -4,10 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a83099b-36a6-4b9b-b961-b2579ca509cf" name="Changes" comment="">
+    <list default="true" id="6a83099b-36a6-4b9b-b961-b2579ca509cf" name="Changes" comment="Minor bug fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/script.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -108,7 +107,7 @@
       <workItem from="1738266304991" duration="38000" />
       <workItem from="1738266368671" duration="38002000" />
       <workItem from="1738612222441" duration="459000" />
-      <workItem from="1738612701314" duration="919000" />
+      <workItem from="1738612701314" duration="1606000" />
     </task>
     <task id="LOCAL-00001" summary="Correzione tema">
       <option name="closed" value="true" />
@@ -166,7 +165,23 @@
       <option name="project" value="LOCAL" />
       <updated>1738587805483</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Minor bug fix">
+      <option name="closed" value="true" />
+      <created>1738613685859</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1738613685859</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Minor bug fix">
+      <option name="closed" value="true" />
+      <created>1738613782808</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1738613782808</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -191,6 +206,7 @@
     <MESSAGE value="Cambio colorazione icone link" />
     <MESSAGE value="Completazione traduzione portfolio e aggiunta delle notifiche popup" />
     <MESSAGE value="Aggiornato CV e aggiunto quello inglese" />
-    <option name="LAST_COMMIT_MESSAGE" value="Aggiornato CV e aggiunto quello inglese" />
+    <MESSAGE value="Minor bug fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Minor bug fix" />
   </component>
 </project>

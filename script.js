@@ -166,6 +166,13 @@ document.addEventListener("DOMContentLoaded", function () {
         footerText.forEach(item => {
             item.textContent = item.getAttribute(`data-${currentLanguage}`);
         })
+        //
+        const cvDownload = document.getElementById("cv-download");
+        if (currentLanguage === "it") {
+            cvDownload.href = "assets/cv/CV%20Zywel%20Fankam%20(IT).pdf";
+        } else {
+            cvDownload.href = "assets/cv/CV%20Zywel%20Fankam%20(EN).pdf";
+        }
     });
 });
 

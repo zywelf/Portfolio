@@ -608,6 +608,10 @@ footer ul li a{
     header #menu-icon{
         display: block;
     }
+    .section-title{
+        text-align: center;
+        font-size: 3rem;
+    }
     .nav-links{
         position: absolute;
         top: 100%;

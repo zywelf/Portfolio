@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="6a83099b-36a6-4b9b-b961-b2579ca509cf" name="Changes" comment="Aggiornato CV e aggiunto quello inglese">
+      <change afterPath="$PROJECT_DIR$/src/css/responsive.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/Portfolio_Zywel.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/material_theme_project_new.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/cv/CV Zywel Fankam (EN).pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/cv/CV Zywel Fankam (EN).pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/cv/CV Zywel Fankam (IT).pdf" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/cv/CV Zywel Fankam (IT).pdf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/Oblivion.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/Oblivion.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/PicCV.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/PicCV.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/assets/images/undraw_logistics_xpdj.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/assets/images/undraw_logistics_xpdj.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/js/script.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/css/style.css" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="StarkLab" />
+      </map>
+    </option>
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;zywelf&quot;
+  }
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/zywelf/Portfolio.git&quot;,
+    &quot;accountId&quot;: &quot;e0961e8c-ee0d-4e92-b853-c262e9d7fb06&quot;
+  },
+  &quot;recentNewPullRequestHead&quot;: {
+    &quot;server&quot;: {
+      &quot;useHttp&quot;: false,
+      &quot;host&quot;: &quot;github.com&quot;,
+      &quot;port&quot;: null,
+      &quot;suffix&quot;: null
+    },
+    &quot;owner&quot;: &quot;zywelf&quot;,
+    &quot;repository&quot;: &quot;Portfolio&quot;
+  }
+}</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 7
+}</component>
+  <component name="ProjectId" id="2s5oUV0UFPHF6WYdhZYd954sB9k" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;dart.analysis.tool.window.visible&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/zywel/Desktop/Career/Portfolio_Zywel/assets/cv&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\zywel\Desktop\Career\Portfolio_Zywel\assets\cv" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\zywel\Desktop\Career\Portfolio_Zywel\src\js" />
+      <recent name="C:\Users\zywel\Desktop\Career\Portfolio_Zywel\src\css" />
+      <recent name="C:\Users\zywel\Desktop\Career\Portfolio_Zywel\src" />
+      <recent name="C:\Users\zywel\Desktop\Career\Portfolio_Zywel\assets\images" />
+      <recent name="C:\Users\zywel\Desktop\Career\Portfolio_Zywel\assets\cv" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-js-predefined-d6986cc7102b-822845ee3bb5-JavaScript-WS-243.23654.157" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="6a83099b-36a6-4b9b-b961-b2579ca509cf" name="Changes" comment="" />
+      <created>1737754812602</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1737754812602</updated>
+      <workItem from="1737754813691" duration="608000" />
+      <workItem from="1737755636220" duration="23485000" />
+      <workItem from="1737891786036" duration="1883000" />
+      <workItem from="1737896516677" duration="12493000" />
+      <workItem from="1737983909240" duration="17918000" />
+      <workItem from="1738150808054" duration="4947000" />
+      <workItem from="1738159833707" duration="2854000" />
+      <workItem from="1738266304991" duration="38000" />
+      <workItem from="1738266368671" duration="37065000" />
+    </task>
+    <task id="LOCAL-00001" summary="Correzione tema">
+      <option name="closed" value="true" />
+      <created>1737984431112</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1737984431112</updated>
+    </task>
+    <task id="LOCAL-00002" summary="Collegamenti con i bottoni e miglioramento sezione contatti">
+      <option name="closed" value="true" />
+      <created>1738080492466</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1738080492466</updated>
+    </task>
+    <task id="LOCAL-00003" summary="Sistemazione sezione esperienza e piccole migliorie aggiunte">
+      <option name="closed" value="true" />
+      <created>1738175911318</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1738175911318</updated>
+    </task>
+    <task id="LOCAL-00004" summary="Traduzione portfolio e migliorie nella responsivita">
+      <option name="closed" value="true" />
+      <created>1738413393951</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1738413393951</updated>
+    </task>
+    <task id="LOCAL-00005" summary="Cambio colorazione icone link">
+      <option name="closed" value="true" />
+      <created>1738414028540</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1738414028540</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Completazione traduzione portfolio e aggiunta delle notifiche popup">
+      <option name="closed" value="true" />
+      <created>1738522174714</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1738522174714</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Aggiornato CV e aggiunto quello inglese">
+      <option name="closed" value="true" />
+      <created>1738587805483</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1738587805483</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Correzione tema" />
+    <MESSAGE value="Collegamenti con i bottoni e miglioramento sezione contatti" />
+    <MESSAGE value="Sistemazione sezione esperienza e piccole migliorie aggiunte" />
+    <MESSAGE value="Traduzione portfolio e migliorie nella responsivita" />
+    <MESSAGE value="Cambio colorazione icone link" />
+    <MESSAGE value="Completazione traduzione portfolio e aggiunta delle notifiche popup" />
+    <MESSAGE value="Aggiornato CV e aggiunto quello inglese" />
+    <option name="LAST_COMMIT_MESSAGE" value="Aggiornato CV e aggiunto quello inglese" />
+  </component>
+</project>

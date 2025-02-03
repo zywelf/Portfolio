@@ -1,0 +1,158 @@
+/*                                      Formattazione responsitivita'                                    */
+@media (max-width: 1280px){
+    header{
+        padding: 1rem 2rem;
+        gap: 2rem;
+    }
+    .about .about-container{
+        gap: 3rem;
+    }
+    .experience-info{
+        flex-direction: column;
+    }
+    .info-box input{
+        padding: 2rem 5rem;
+        font-size: 2.5rem;
+    }
+    .input input::placeholder{
+        font-size: 2.5rem;
+    }
+    .input-box i{
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px){
+    header{
+        padding: 1rem 1rem;
+        gap: 1rem;
+    }
+    header .logo{
+        font-size: 1rem;
+    }
+    header .button-github{
+        display: none;
+    }
+    #theme-switch i,
+    #lang-switch i{
+        font-size: 1.4rem;
+    }
+    .about-container{
+        flex-direction: column;
+    }
+    .input-box i{
+        /*display: none;*/
+        position: absolute;
+        left: 1rem;
+        font-size: 1.3rem;
+    }
+    .grid{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .experience-info img{
+        width: 70vw;
+    }
+    .textarea-box textarea{
+        font-size: 1.4rem;
+    }
+}
+
+@media (max-width: 600px){
+    header {
+        display: flex;
+        align-items: center;
+    }
+    #theme-switch,
+    #lang-switch,
+    #menu-icon{
+        position: relative;
+    }
+    #theme-switch i,
+    #lang-switch i,
+    #menu-icon i{
+        font-size: 1.8rem;
+    }
+    header #menu-icon{
+        display: block;
+    }
+    .section-title{
+        text-align: center;
+        font-size: 3rem;
+    }
+    .nav-links{
+        position: absolute;
+        top: 100%;
+        margin-top: 1rem;
+        width: 100%;
+        padding: 1rem;
+        flex-direction: column;
+        text-align: center;
+        background: rgba(0,0,0,0.9);
+        border-radius: 3rem;
+        display: none;
+    }
+    .nav-links a{
+        color: white;
+    }
+    .nav-links li{
+        margin-top: 1.5rem;
+        padding: 1rem;
+    }
+    .nav-links.active{
+        display: flex;
+    }
+    header .logo{
+        font-size: 1.5rem;
+    }
+    .about-container img{
+        width: 80vw;
+    }
+    .input-box input{
+        padding: 1rem 3rem;
+        /*width: 80%;*/
+        font-size: 1.5rem;
+    }
+    .input-box input::placeholder{
+        font-size: 1.3rem;
+    }
+    .input-box i{
+        position: absolute;
+        left: 1rem;
+        font-size: 1rem;
+    }
+    footer ul{
+        gap: 1rem;
+    }
+    .textarea-box textarea{
+        font-size: 1.1rem;
+    }
+}
+/*                                      Formattazione responsitivita' generica                                    */
+.social-links i:hover{
+    transform: scale(1.1);
+}
+/*Colorazione dei loghi intatta una volta cliccato i tasti*/
+.social-links a:visited{
+    color: inherit;
+}
+.switch-container{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+/*                                      Formattazione responsitivita' unita                                   */
+@media (max-width: 768px), (max-width: 600px) {
+    .input-box input {
+        padding: 1rem 3rem;
+        font-size: 1.8rem;
+    }
+    .input-box input::placeholder {
+        font-size: 1.3rem;
+    }
+}
+@media (max-width: 1280px), (max-width: 600px) {
+    .about .about-container {
+        flex-direction: column;
+        gap: 3rem;
+    }
+}

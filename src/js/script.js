@@ -43,7 +43,6 @@ function showPopupUnavailable(type = "unavailable") {
     // Usa sempre la stessa classe CSS per il popup
     showPopup(messages[currentLanguage][type], "unavailable");
 }
-
 //Funzione per cambiare il tema del portfolio
 document.addEventListener("DOMContentLoaded", function () {
     const themeSwitch = document.getElementById('theme-switch');
@@ -70,9 +69,6 @@ document.addEventListener("DOMContentLoaded", function () {
         showPopup(message,"theme"); // Mostra il popup
     });
 });
-
-
-
 //Funzione per cambiare la lingua del portfolio
 document.addEventListener("DOMContentLoaded", function () {
     const langSwitch = document.getElementById("lang-switch");
@@ -169,9 +165,9 @@ document.addEventListener("DOMContentLoaded", function () {
         //
         const cvDownload = document.getElementById("cv-download");
         if (currentLanguage === "it") {
-            cvDownload.href = "assets/cv/CV%20Zywel%20Fankam%20(IT).pdf";
+            cvDownload.href = "src/assets/cv/CV%20Zywel%20Fankam%20(IT).pdf";
         } else {
-            cvDownload.href = "assets/cv/CV%20Zywel%20Fankam%20(EN).pdf";
+            cvDownload.href = "src//cv/CV%20Zywel%20Fankam%20(EN).pdf";
         }
     });
 });

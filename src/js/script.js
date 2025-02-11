@@ -167,7 +167,7 @@ document.addEventListener("DOMContentLoaded", function () {
         if (currentLanguage === "it") {
             cvDownload.href = "src/assets/cv/CV%20Zywel%20Fankam%20(IT).pdf";
         } else {
-            cvDownload.href = "src//cv/CV%20Zywel%20Fankam%20(EN).pdf";
+            cvDownload.href = "src/assets/cv/CV%20Zywel%20Fankam%20(EN).pdf";
         }
     });
 });

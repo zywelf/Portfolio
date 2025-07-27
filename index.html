@@ -1,19 +1,28 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="it">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta
+        name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0"
+    />
     <title>Portfolio Zywel</title>
-    <link href="src/css/style.css" rel="stylesheet">
-    <link href="src/css/responsive.css" rel="stylesheet" >
+    <link href="src/css/style.css" rel="stylesheet" />
+    <link href="src/css/responsive.css" rel="stylesheet" />
     <!--Collegamento esterno per utilizzare icone-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous"
+        referrerpolicy="no-referrer"
+    />
 </head>
+
 <body>
     <!--PopUp generico-->
     <div id="custom-popup" class="popup">
-        <p id="popup-text"></p>
+    <p id="popup-text"/>
     </div>
     <!--Creazione barra di navigazione principale-->
     <header class="header">
@@ -21,213 +30,397 @@
 
         <ul class="nav-links">
             <li>
-                <a href="#about" class="nav-item" data-it="Informazioni" data-en="About">Informazioni</a>
+            <a
+                href="#about"
+                class="nav-item"
+                data-it="Informazioni"
+                data-en="About"
+                >Informazioni</a
+            >
             </li>
             <li>
-                <a href="#experience" class="nav-item" data-it="Esperienze" data-en="Experiences">Esperienze</a>
+            <a
+                href="#experience"
+                class="nav-item"
+                data-it="Esperienze"
+                data-en="Experiences"
+                >Esperienze</a
+            >
             </li>
             <li>
-                <a href="#projects" class="nav-item" data-it="Progetti" data-en="Projects">Progetti</a>
+            <a
+                href="#projects"
+                class="nav-item"
+                data-it="Progetti"
+                data-en="Projects"
+                >Progetti</a
+            >
             </li>
             <li>
-                <a href="#contact" class="nav-item" data-it="Contatta" data-en="Contact">Contatta</a>
+            <a
+                href="#contact"
+                class="nav-item"
+                data-it="Contatta"
+                data-en="Contact"
+                >Contatta</a
+            >
             </li>
         </ul>
 
-        <button class="button-github" onclick="window.open('https://github.com/zywelf', '_blank')" data-it="Visita GitHub" data-en="Visit GitHub">Visita GitHub</button>
+        <button
+            class="button-github"
+            onclick="window.open('https://github.com/zywelf', '_blank')"
+            data-it="Visita GitHub"
+            data-en="Visit GitHub"
+        >
+            Visita GitHub
+        </button>
 
         <div class="switch-container">
             <div id="menu-icon">
-                <i class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-bars"></i>
             </div>
             <div id="theme-switch">
-                <i class="fa-regular fa-lightbulb"></i>
+            <i class="fa-regular fa-lightbulb"></i>
             </div>
             <div id="lang-switch">
-                <i class="fa-solid fa-language"></i>
+            <i class="fa-solid fa-language"></i>
             </div>
         </div>
     </header>
     <!--Creazione sezione per informazioni principali -->
     <section id="about" class="about">
-
         <div class="about-container">
-            <img src="src/assets/images/PicCV.jpg" alt="">
+            <img src="src/assets/images/PicCV.jpg" alt="" />
 
             <div class="info-about">
+            <div class="text">
+                <h3 class="text-h3" data-it="Ciao, sono" data-en="Hi, I'm">
+                Ciao, sono
+                </h3>
+                <h1>Zywel Fankam</h1>
+                <span>Frontend Developer</span>
+            </div>
 
-                <div class="text">
-                    <h3 class="text-h3" data-it="Ciao, sono" data-en="Hi, I'm">Ciao, sono</h3>
-                    <h1>Zywel Fankam</h1>
-                    <span>Frontend Developer</span>
-                </div>
+            <div class="button-group">
+                <a
+                id="cv-download"
+                href="src/assets/cv/CV%20Zywel%20Fankam%20(IT).pdf"
+                download="Zywel_Fankam_CV.pdf"
+                class="button"
+                data-it="Scarica CV"
+                data-en="Download CV"
+                >Scarica CV</a
+                >
+                <a
+                href="#contact"
+                class="button"
+                data-it="Contattami"
+                data-en="Contact me"
+                >Contattami</a
+                >
+            </div>
 
-                <div class="button-group">
-                    <a id="cv-download" href="src/assets/cv/CV%20Zywel%20Fankam%20(IT).pdf" download="Zywel_Fankam_CV.pdf" class="button" data-it="Scarica CV" data-en="Download CV">Scarica CV</a>
-                    <a href="#contact" class="button" data-it="Contattami" data-en="Contact me">Contattami</a>
-                </div>
-
-                <div class="social-links">
-                    <a href="https://github.com/zywelf" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-github"></i>
-                    </a>
-                    <a href="https://www.linkedin.com/in/zywel-fankam/" target="_blank" rel="noopener noreferrer">
-                        <i class="fa-brands fa-linkedin"></i>
-                    </a>
-                </div>
-        </div>
-
+            <div class="social-links">
+                <a
+                href="https://github.com/zywelf"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                <i class="fa-brands fa-github"></i>
+                </a>
+                <a
+                href="https://www.linkedin.com/in/zywel-fankam/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >
+                <i class="fa-brands fa-linkedin"></i>
+                </a>
+            </div>
+            </div>
         </div>
     </section>
     <!--Creazione sezione con esperienza-->
     <section id="experience" class="experience">
-        <h2 class="section-title" data-it="Esperienze" data-en="Experiences">Esperienze</h2>
+        <h2 class="section-title" data-it="Esperienze" data-en="Experiences">
+            Esperienze
+        </h2>
 
         <div class="experience-info">
-
-            <div class="grid">
-                <div class="grid-card">
-                    <i class="fa-solid fa-code"></i>
-                    <span>Frontend Developer</span>
-                    <h3 class="monthExp" data-it="5 Mesi" data-en="5 Months">5 Mesi</h3>
-                    <p class="parExp"
-                       data-it="Ristrutturazione, ottimizzazione e miglioramento di un sito web e l’app di una catena di ristoranti asiatici,
+        <div class="grid">
+            <div class="grid-card">
+            <i class="fa-solid fa-code"></i>
+            <span>Frontend Developer</span>
+            <h3 class="monthExp" data-it="5 Mesi" data-en="5 Months">5 Mesi</h3>
+            <p
+                class="parExp"
+                data-it="Ristrutturazione, ottimizzazione e miglioramento di un sito web e l’app di una catena di ristoranti asiatici,
                         implementando nuove funzionalità, migliorando la UX/UI e lavorando anche in backend per alcune revisioni e ottimizzazioni."
-                       data-en="Restructuring, optimization, and enhancement of a website and app for an Asian restaurant chain, implementing new features,
-                        improving UX/UI, and also working on the backend for some revisions and optimizations.">
-                        Ristrutturazione, ottimizzazione e miglioramento di un sito web e l’app di una catena di ristoranti asiatici,
-                        implementando nuove funzionalità, migliorando la UX/UI e lavorando anche in backend per alcune revisioni e ottimizzazioni.
-                    </p>
-                    <div class="icon-container">
-                        <i class="fa-brands fa-vuejs"></i>
-                        <i class="fa-brands fa-js"></i>
-                        <i class="fa-brands fa-html5"></i>
-                        <i class="fa-brands fa-css"></i>
-                    </div>
-                </div>
-<!--                <div class="grid-card">-->
-<!--                    <i class="fa-solid fa-desktop"></i>-->
-<!--                    <span>Frontend Developer</span>-->
-<!--                    <h3>6 Mesi</h3>-->
-<!--                    <p>Lorem ipsum dolor sit amet. Eum quis necessitatibus 33 velit labore At incidunt debitis. Et dignissimos expedita aut culpa dolor rem fuga sunt!</p>-->
-<!--                </div>-->
-<!--                <div class="grid-card">-->
-<!--                    <i class="fa-solid fa-laptop-code"></i>-->
-<!--                    <span>Frontend Developer</span>-->
-<!--                    <h3>6 Mesi</h3>-->
-<!--                    <p>Lorem ipsum dolor sit amet. Eum quis necessitatibus 33 velit labore At incidunt debitis. Et dignissimos expedita aut culpa dolor rem fuga sunt!</p>-->
-<!--                </div>-->
+                data-en="Restructuring, optimization, and enhancement of a website and app for an Asian restaurant chain, implementing new features,
+                        improving UX/UI, and also working on the backend for some revisions and optimizations."
+            >
+                Ristrutturazione, ottimizzazione e miglioramento di un sito web e
+                l’app di una catena di ristoranti asiatici, implementando nuove
+                funzionalità, migliorando la UX/UI e lavorando anche in backend
+                per alcune revisioni e ottimizzazioni.
+            </p>
+            <div class="icon-container">
+                <i class="fa-brands fa-vuejs"></i>
+                <i class="fa-brands fa-js"></i>
+                <i class="fa-brands fa-html5"></i>
+                <i class="fa-brands fa-css"></i>
             </div>
-            <img src="src/assets/images/PicCV.jpg" alt="">
+            </div>
+            <!--                <div class="grid-card">-->
+            <!--                    <i class="fa-solid fa-desktop"></i>-->
+            <!--                    <span>Frontend Developer</span>-->
+            <!--                    <h3>6 Mesi</h3>-->
+            <!--                    <p>Lorem ipsum dolor sit amet. Eum quis necessitatibus 33 velit labore At incidunt debitis. Et dignissimos expedita aut culpa dolor rem fuga sunt!</p>-->
+            <!--                </div>-->
+            <!--                <div class="grid-card">-->
+            <!--                    <i class="fa-solid fa-laptop-code"></i>-->
+            <!--                    <span>Frontend Developer</span>-->
+            <!--                    <h3>6 Mesi</h3>-->
+            <!--                    <p>Lorem ipsum dolor sit amet. Eum quis necessitatibus 33 velit labore At incidunt debitis. Et dignissimos expedita aut culpa dolor rem fuga sunt!</p>-->
+            <!--                </div>-->
+        </div>
+        <img src="src/assets/images/PicCV.jpg" alt="" />
         </div>
     </section>
     <!--Creazione sezione progetti-->
     <section id="projects" class="projects">
+        <h2 class="section-title" data-it="Progetti" data-en="Projects">
+        Progetti
+        </h2>
 
-        <h2 class="section-title" data-it="Progetti" data-en="Projects">Progetti</h2>
-
-        <div class="projects-grid">
-
-            <div class="project-card">
-                <img src="src/assets/images/Oblivion.jpg" alt="">
-                <h3 class="projectName" data-it="Progetto: Oblivion" data-en="Project: Oblivion">Progetto: Oblivion</h3>
-                <p class="proDesc"
-                   data-it="App che aiuta a ridurre le distrazioni digitali, permettendo agli utenti di concentrarsi su attività all'aperto, faccende domestiche e studio/lavoro.
+    <div class="projects-grid">
+        <div class="project-card">
+        <img src="src/assets/images/Oblivion.jpg" alt="" />
+        <h3
+            class="projectName"
+            data-it="Progetto: Oblivion"
+            data-en="Project: Oblivion"
+        >
+            Progetto: Oblivion
+        </h3>
+        <p
+            class="proDesc"
+            data-it="App che aiuta a ridurre le distrazioni digitali, permettendo agli utenti di concentrarsi su attività all'aperto, faccende domestiche e studio/lavoro.
                     L'app filtra le notifiche, mantenendo l'accesso a chiamate e musica, per un equilibrio ottimale tra produttività e intrattenimento."
-                   data-en="App that helps reduce digital distractions, allowing users to focus on outdoor activities, household chores, and study/work.
-                    The app filters notifications while still providing access to calls and music, ensuring an optimal balance between productivity and entertainment.">
-                    App che aiuta a ridurre le distrazioni digitali, permettendo agli utenti di concentrarsi su attività all'aperto, faccende domestiche e studio/lavoro.
-                    <br>L'app filtra le notifiche, mantenendo l'accesso a chiamate e musica, per un equilibrio ottimale tra produttività e intrattenimento.
-                </p>
-                <div class="button-group">
-                    <div class="button" onclick="showPopupUnavailable('demo')" data-it="Live Demo" data-en="Live Demo">Live Demo</div>
-                    <a href="https://github.com/zywelf/myblivion_application" target="_blank" class="button" data-it="GitHub Repo" data-en="GitHub Repo">GitHub Repo</a>
-                </div>
+            data-en="App that helps reduce digital distractions, allowing users to focus on outdoor activities, household chores, and study/work.
+                    The app filters notifications while still providing access to calls and music, ensuring an optimal balance between productivity and entertainment."
+        >
+            App che aiuta a ridurre le distrazioni digitali, permettendo agli
+            utenti di concentrarsi su attività all'aperto, faccende domestiche e
+            studio/lavoro.
+            <br />L'app filtra le notifiche, mantenendo l'accesso a chiamate e
+            musica, per un equilibrio ottimale tra produttività e
+            intrattenimento.
+        </p>
+        <div class="button-group">
+            <div
+            class="button"
+            onclick="showPopupUnavailable('demo')"
+            data-it="Live Demo"
+            data-en="Live Demo"
+            >
+            Live Demo
             </div>
+            <a
+            href="https://github.com/zywelf/myblivion_application"
+            target="_blank"
+            class="button"
+            data-it="GitHub Repo"
+            data-en="GitHub Repo"
+            >GitHub Repo</a
+            >
+        </div>
+    </div>
 
-            <div class="project-card">
-                <img src="src/assets/images/undraw_logistics_xpdj.png" alt="">
-                <h3 class="projectName" data-it="Progetto Y" data-en="Project Y">Progetto Y</h3>
-                <p class="proDesc"
-                    data-it="Lorem ipsum dolor sit amet. Eum quis necessitatibus 33 velit labore At incidunt debitis. Et dignissimos expedita aut culpa dolor rem fuga sunt!"
-                    data-en="Lorem ipsum dolor sit amet. Eum quis necessitatibus 33 velit labore At incidunt debitis. Et dignissimos expedita aut culpa dolor rem fuga sunt!">
-                    Lorem ipsum dolor sit amet. Eum quis necessitatibus 33 velit labore At incidunt debitis. Et dignissimos expedita aut culpa dolor rem fuga sunt!
-                </p>
-                <div class="button-group">
-                    <div class="button" onclick="showPopupUnavailable('demo')" data-it="Live Demo" data-en="Live Demo">Live Demo</div>
-                    <div class="button" onclick="showPopupUnavailable('repo')" data-it="GitHub Repo" data-en="GitHub Repo">GitHub Repo</div>
+        <div class="project-card">
+            <img src="src/assets/images/undraw_logistics_xpdj.png" alt="" />
+            <h3 class="projectName" data-it="Progetto Y" data-en="Project Y">
+                Progetto Y
+            </h3>
+            <p
+                class="proDesc"
+                data-it="Lorem ipsum dolor sit amet. Eum quis necessitatibus 33 velit labore At incidunt debitis. Et dignissimos expedita aut culpa dolor rem fuga sunt!"
+                data-en="Lorem ipsum dolor sit amet. Eum quis necessitatibus 33 velit labore At incidunt debitis. Et dignissimos expedita aut culpa dolor rem fuga sunt!"
+            >
+                Lorem ipsum dolor sit amet. Eum quis necessitatibus 33 velit labore
+                At incidunt debitis. Et dignissimos expedita aut culpa dolor rem
+                fuga sunt!
+            </p>
+            <div class="button-group">
+                <div
+                class="button"
+                onclick="showPopupUnavailable('demo')"
+                data-it="Live Demo"
+                data-en="Live Demo"
+                >
+                Live Demo
                 </div>
-            </div>
-
-            <div class="project-card">
-                <img src="src/assets/images/undraw_logistics_xpdj.png" alt="">
-                <h3 class="projectName" data-it="Progetto Z" data-en="Project Z">Progetto Z</h3>
-                <p class="proDesc"
-                   data-it="Lorem ipsum dolor sit amet. Eum quis necessitatibus 33 velit labore At incidunt debitis. Et dignissimos expedita aut culpa dolor rem fuga sunt!"
-                   data-en="Lorem ipsum dolor sit amet. Eum quis necessitatibus 33 velit labore At incidunt debitis. Et dignissimos expedita aut culpa dolor rem fuga sunt!">
-                    Lorem ipsum dolor sit amet. Eum quis necessitatibus 33 velit labore At incidunt debitis. Et dignissimos expedita aut culpa dolor rem fuga sunt!
-                </p>
-                <div class="button-group">
-                    <div class="button" onclick="showPopupUnavailable('demo')" data-it="Live Demo" data-en="Live Demo">Live Demo</div>
-                    <div class="button" onclick="showPopupUnavailable('repo')" data-it="GitHub Repo" data-en="GitHub Repo">GitHub Repo</div>
+                <div
+                class="button"
+                onclick="showPopupUnavailable('repo')"
+                data-it="GitHub Repo"
+                data-en="GitHub Repo"
+                >
+                GitHub Repo
                 </div>
             </div>
         </div>
+
+        <div class="project-card">
+            <img src="src/assets/images/undraw_logistics_xpdj.png" alt="" />
+            <h3 class="projectName" data-it="Progetto Z" data-en="Project Z">
+                Progetto Z
+            </h3>
+            <p
+                class="proDesc"
+                data-it="Lorem ipsum dolor sit amet. Eum quis necessitatibus 33 velit labore At incidunt debitis. Et dignissimos expedita aut culpa dolor rem fuga sunt!"
+                data-en="Lorem ipsum dolor sit amet. Eum quis necessitatibus 33 velit labore At incidunt debitis. Et dignissimos expedita aut culpa dolor rem fuga sunt!"
+            >
+                Lorem ipsum dolor sit amet. Eum quis necessitatibus 33 velit labore
+                At incidunt debitis. Et dignissimos expedita aut culpa dolor rem
+                fuga sunt!
+            </p>
+            <div class="button-group">
+                <div
+                    class="button"
+                    onclick="showPopupUnavailable('demo')"
+                    data-it="Live Demo"
+                    data-en="Live Demo"
+                >
+                    <p>Live Demo</p>
+                </div>
+                <div
+                    class="button"
+                    onclick="showPopupUnavailable('repo')"
+                    data-it="GitHub Repo"
+                    data-en="GitHub Repo"
+                >
+                    <p>GitHub Repo</p>
+                </div>
+            </div>
+        </div>
+    </div>
     </section>
     <!--Creazione sezione contatti-->
     <section id="contact" class="contact">
+        <div  class="input-box">
+        <h2 class="section-title" data-it="Contattami" data-en="Contact me">
+            Contattami
+        </h2>
 
-        <div class="input-box">
-            <h2 class="section-title" data-it="Contattami" data-en="Contact me">Contattami</h2>
-
-            <div class="input">
-                <input type="text" placeholder="Nome completo" data-it="Nome completo" data-en="Full name" autocomplete="off" id="name">
-                <i class="fa-solid fa-user"></i>
-            </div>
-<!--            <div class="error-text">Riempire la casella del nome</div>-->
-
-            <div class="input">
-                <input type="text" placeholder="Oggetto email" data-it="Oggetto email" data-en="Email subject" autocomplete="off" id="content">
-                <i class="fa-regular fa-message"></i>
-            </div>
-<!--            <div class="error-text">Riempire la casella dell'oggetto email</div>-->
-
-            <div class="input">
-                <input type="text" placeholder="example@email.com" autocomplete="off" id="email">
-                <i class="fa-solid fa-at"></i>
-            </div>
-<!--            <div class="error-text">Riempire la casella email</div>-->
-
-            <div class="textarea-box">
-                <textarea placeholder="Il tuo messaggio" data-it="Il tuo messaggio" data-en="Your message" autocomplete="off" cols="35" rows="10" id="description"></textarea>
-            </div>
-<!--            <div class="error-text">Riempire la casella testo</div>-->
-
-            <div class="button" onclick="showPopupUnavailable('send')" data-it="Invia" data-en="Send">Invia</div>
+        <div class="input">
+            <input
+                type="text"
+                placeholder="Nome completo"
+                data-it="Nome completo"
+                data-en="Full name"
+                autocomplete="off"
+                id="name"
+            />
+            <i class="fa-solid fa-user"></i>
         </div>
+        <!--            <div class="error-text">Riempire la casella del nome</div>-->
+
+        <div class="input">
+            <input
+                type="text"
+                placeholder="Oggetto email"
+                data-it="Oggetto email"
+                data-en="Email subject"
+                autocomplete="off"
+                id="content"
+            />
+            <i class="fa-regular fa-message"></i>
+        </div>
+        <!--            <div class="error-text">Riempire la casella dell'oggetto email</div>-->
+
+        <div class="input">
+            <input
+                type="text"
+                placeholder="example@email.com"
+                autocomplete="off"
+                id="email"
+            />
+            <i class="fa-solid fa-at"></i>
+        </div>
+        <!--            <div class="error-text">Riempire la casella email</div>-->
+
+        <div class="textarea-box">
+            <textarea
+                placeholder="Il tuo messaggio"
+                data-it="Il tuo messaggio"
+                data-en="Your message"
+                autocomplete="off"
+                cols="35"
+                rows="10"
+                id="description"
+            />
+        </div>
+        <!--            <div class="error-text">Riempire la casella testo</div>-->
+
+        <div
+            class="button"
+            onclick="showPopupUnavailable('send')"
+            data-it="Invia"
+            data-en="Send"
+        >
+        Invia
+        </div>
+    </div>
     </section>
     <!--Creazione footer-->
     <footer>
-        <ul>
-            <li>
-                <a href="#about" class="footerTxt" data-it="Informazioni" data-en="Information">Informazioni</a>
-            </li>
+    <ul>
+        <li>
+            <a
+                href="#about"
+                class="footerTxt"
+                data-it="Informazioni"
+                data-en="Information"
+                >Informazioni</a
+            >
+        </li>
 
-            <li>
-                <a href="#experience" class="footerTxt" data-it="Esperienza" data-en="Experience">Esperienza</a>
-            </li>
+        <li>
+            <a
+                href="#experience"
+                class="footerTxt"
+                data-it="Esperienza"
+                data-en="Experience"
+                >Esperienza</a
+            >
+        </li>
 
-            <li>
-                <a href="#projects" class="footerTxt" data-it="Progetti" data-en="Projects">Progetti</a>
-            </li>
+        <li>
+            <a
+                href="#projects"
+                class="footerTxt"
+                data-it="Progetti"
+                data-en="Projects"
+                >Progetti</a
+            >
+        </li>
 
-            <li>
-                <a href="#contact" class="footerTxt" data-it="Contatta" data-en="Contact">Contatta</a>
-            </li>
-        </ul>
+        <li>
+            <a
+                href="#contact"
+                class="footerTxt"
+                data-it="Contatta"
+                data-en="Contact"
+                >Contatta</a
+            >
+        </li>
+    </ul>
 
-        <p class="copyright">&copy; 2025 Zywel Fankam | Tutti i diritti riservati. </p>
+    <p class="copyright">
+        &copy; 2025 Zywel Fankam | Tutti i diritti riservati.
+    </p>
     </footer>
-<script src="src/js/script.js"></script>
-</body>
+    <script src="src/js/script.js"></script>
+    </body>
 </html>
